@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+// https://potential-lamp-q7px5v7ggr9vhx9gp-8000.app.github.dev/api/activities
+
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   const apiUrl = `${process.env.REACT_APP_CODESPACE_URL}/api/activities/`;
