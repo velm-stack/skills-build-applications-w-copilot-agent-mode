@@ -4,12 +4,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const codespaceName = process.env.CODESPACE_NAME || window.location.hostname.split('-')[0];
-const protocol = window.location.protocol;
-const port = '8000';
-const apiUrl = `${protocol}//${codespaceName}-8000.app.github.dev`;
-process.env.REACT_APP_CODESPACE_URL = apiUrl;
-console.log('REACT_APP_CODESPACE_URL:', apiUrl);
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
